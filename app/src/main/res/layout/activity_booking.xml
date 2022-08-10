@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".booking"
+    android:background="@drawable/bgskygradient">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/txtRoomName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="TextView"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <TextView
+        android:id="@+id/txtCIDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:text="Check-in Date"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtRoomName" />
+
+    <TextView
+        android:id="@+id/tvCIDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="- date selected -"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/txtCIDate"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="@+id/txtCIDate"
+        app:layout_constraintTop_toBottomOf="@+id/txtCIDate" />
+
+    <TextView
+        android:id="@+id/txtCODate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:text="Check-Out Date"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCIDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtCIDate"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvCODate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- date displayed -"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCIDate"
+        app:layout_constraintEnd_toEndOf="@+id/txtCODate"
+        app:layout_constraintStart_toStartOf="@+id/txtCODate"
+        app:layout_constraintTop_toTopOf="@+id/tvCIDate" />
+
+    <TextView
+        android:id="@+id/txtStayCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="Total days"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnBook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginBottom="24dp"
+        android:text="R999"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/txtStayCount"
+        app:layout_constraintStart_toEndOf="@+id/txtStayCount"
+        app:layout_constraintTop_toTopOf="@+id/txtStayCount"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnBook"
+        android:layout_width="98dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/amenitycard"
+        android:text="Book Now"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="103dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/amenitycard"
+        android:text="Update"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+
+        <TextView
+            android:id="@+id/txtResName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="NAME"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtResType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TYPE"
+            app:layout_constraintEnd_toEndOf="@+id/txtResName"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/txtResName"
+            app:layout_constraintTop_toBottomOf="@+id/txtResName" />
+
+        <TextView
+            android:id="@+id/txtResCI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:text="CHECK IN"
+            app:layout_constraintBottom_toBottomOf="@+id/txtResName"
+            app:layout_constraintEnd_toStartOf="@+id/txtResCO"
+            app:layout_constraintTop_toTopOf="@+id/txtResName"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtResCO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:text="CHECK OUT"
+            app:layout_constraintBottom_toBottomOf="@+id/txtResCI"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtResCI"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txtResCIDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CHECK OUT"
+            app:layout_constraintBottom_toBottomOf="@+id/txtResType"
+            app:layout_constraintEnd_toEndOf="@+id/txtResCI"
+            app:layout_constraintStart_toStartOf="@+id/txtResCI"
+            app:layout_constraintTop_toTopOf="@+id/txtResType" />
+
+        <TextView
+            android:id="@+id/txtResCODate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-co date-"
+            app:layout_constraintBottom_toBottomOf="@+id/txtResCIDate"
+            app:layout_constraintEnd_toEndOf="@+id/txtResCO"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/txtResCO"
+            app:layout_constraintTop_toTopOf="@+id/txtResCIDate"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

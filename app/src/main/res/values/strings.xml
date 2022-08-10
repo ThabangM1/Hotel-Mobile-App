@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">skyhotels</string>
+    <string name="room_description">Room Description</string>
+    <string name="room_name">Room Name</string>
+    <string name="my_reservations">My Reservations</string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+</resources>
